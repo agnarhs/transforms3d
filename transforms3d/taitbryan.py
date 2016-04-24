@@ -134,7 +134,7 @@ def euler2mat(z, y, x):
                  [0, cosx, -sinx],
                  [0, sinx, cosx]]))
     if Ms:
-        return reduce(np.dot, Ms[::-1])
+        return reduce(np.dot, Ms)
     return np.eye(3)
 
 
